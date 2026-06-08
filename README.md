@@ -32,22 +32,3 @@ cd frontend && npm install
 # add .env.local → NEXT_PUBLIC_API_URL=http://localhost:5000
 npm run dev
 ```
-## 📁 Project Structure
-Task-Management-System/
-├── backend/
-│   ├── prisma/
-│   │   └── schema.prisma       # DB models (User, Task)
-│   └── src/
-│       ├── controllers/        # authController, tasksController
-│       ├── middleware/         # JWT auth middleware
-│       ├── routes/             # authRoutes, taskRoutes
-│       ├── lib/prisma.ts       # Prisma client
-│       └── index.ts            # Express app entry
-└── frontend/
-└── src/
-├── app/
-│   ├── login/          # Login page
-│   ├── register/       # Register page
-│   └── dashboard/      # Task dashboard
-├── context/            # AuthContext
-└── lib/api.ts          # Axios instance
